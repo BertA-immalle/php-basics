@@ -20,11 +20,11 @@ $var_b = 123;
 
 // Vervang de true in de if-voorwaarden zodat het klopt wat er staat:
 
-if(true) {
+if($var_a == $var_b) {
     echo '$var_a en $var_b zijn aan elkaar gelijk maar zijn niet van hetzelfde type.';
 }
 
-if(false) {
+if($var_a === $var_b) {
     echo '$var_a en $var_b zijn aan elkaar gelijk en van hetzelfde type.';
 }
 
