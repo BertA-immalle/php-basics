@@ -7,15 +7,18 @@ $leerlingen = array("Thom", "Kathleen", "Jelle");
 
 // Itereer er over met een for-loop. Print ze af in een HTML ongenummerde lijst.
 
-$for = "dit is een for-loop <br>";
+$for = "dit is een for-loop: <br>";
 echo $for;
-for ($i=0; $i < array_count_values($leerlingen); $i++) { 
-    echo $i;
+
+for ($i=0; $i < count($leerlingen); $i++) { 
+    echo $leerlingen[$i];
+    echo "<br>";
 }
+
 
 // Itereer er over met een foreach-loop. Print ze af in HTML genummerde lijst.
 
-$foreach = "dit is een foreach-loop <br>";
+$foreach = "dit is een foreach-loop: <br>";
 echo $foreach;
 
 foreach ($leerlingen as $key => $value) {
@@ -25,10 +28,10 @@ foreach ($leerlingen as $key => $value) {
 $naam = "Willy";
 
 // Itereer met een for-loop over de variable $naam alsof het een array was.
-$naam_over_array = "dit is een for-loop over een gewone standaard variable <br>";
+$naam_over_array = "dit is een for-loop over een gewone standaard variable: <br>";
 echo $naam_over_array; 
-for ($i=0; $i < count($naam); $i++) { 
-    # code ...
+for ($i=0; $i < strlen($naam); $i++) { 
+    echo $naam[$i];
 }
 
 ?>
